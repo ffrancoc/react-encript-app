@@ -1,7 +1,7 @@
 # Aplicación para encriptar texto
 Hecho con React + TSX + CSS
 
-# Screenshoot Desktop
+# Vista Escritorio
 
 
-# Screenshoot Mobile
+# Vista Móvil
