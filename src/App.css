@@ -1,0 +1,107 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;  
+  background: linear-gradient(0deg, rgb(34, 47, 59), rgb(43, 137, 153));
+}
+
+.container .padlock {
+  background-image: url('/src/assets/padlock.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 420px;
+  height: 600px;   
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .padlock div:nth-child(1) input {
+  margin-top: 295px;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 10px;
+  width: 370px;
+  height: 50px;
+  background-color: rgb(235, 226, 188);
+  color:rgb(65, 60, 33);
+  font-size: 1.3rem;
+  box-shadow: inset 1px 1px rgb(10, 10, 10, 0.8);
+}
+
+.container .padlock div:nth-child(1) input::placeholder {
+  color:rgb(65, 60, 33);
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .padlock div:nth-child(1) input:focus {
+  outline: none;
+}
+
+
+.container .padlock div:nth-child(2) {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .padlock div:nth-child(2) button {
+  width: 65px;
+  background-color: rgb(120, 109, 62);
+  box-shadow: inset 3px 3px  rgb(104, 95, 54);
+  color: rgb(255, 2565, 255);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container .padlock div:nth-child(2) button:hover {  
+  background-color: rgb(83, 77, 44);    
+}
+
+.container .padlock div:nth-child(3) {
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.resultado {
+  width: 90%;  
+  background-color: rgb(235, 226, 188);
+  box-shadow: inset 1px 1px rgb(10, 10, 10, 0.8);
+  border: none;
+  border-radius: 10px;
+  color: dodgerblue;
+  margin-top: 20px;
+  padding: 10px 10px;
+  resize: none;
+}
+
+.resultado:focus {
+  outline: none;
+}
+
+
+.container .padlock div:nth-child(3) button {
+  top: 90px;
+  right: 30px;
+  background-color: rgba(83, 77, 44, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  transition: border 1seg ease-out;
+}
+
+.container .padlock div:nth-child(3) button:hover {
+  background-color: rgba(63, 58, 33, 0.8);
+  border: 2px solid rgb(30, 144, 255);
+  transition: border 1seg ease-in;
+}
